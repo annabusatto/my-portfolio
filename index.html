@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna Busatto | Portfolio</title>
+    <style>
+        /* CSS Reset for Consistent Spacing */
+        html, body {
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        /* Basic Styles */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            padding-top: 60px; /* Space for fixed header */
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        /* Navigation Bar */
+        #main-header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #2c3e50;
+            z-index: 1000;
+        }
+
+        #navbar {
+            display: flex;
+            justify-content: center;
+        }
+        
+        #navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            height: 60px;
+        }
+        
+        #navbar li a {
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        #navbar li a:hover {
+            background-color: #34495e;
+        }
+
+        /* Sections */
+        .section {
+            padding: 60px 0;
+        }
+        
+        .project {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-left: 5px solid #3498db;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+        }
+
+        .project img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        #contact {
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #7f8c8d;
+            border-top: 1px solid #bdc3c7;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="main-header">
+        <nav id="navbar">
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="about-me" class="section">
+            <h1 style="font-size: 2.5em;">Anna Busatto</h1>
+            <h2 style="font-size: 1.5em; color: #7f8c8d;">Data Science & Analytics Portfolio</h2>
+            <p style="text-align: center;">Hello, I'm Anna Busatto. I am a PhD student in Biomedical Engineering focusing on Data Science and Analytics for Applied Health and Performance Science. This portfolio showcases my work in sports analytics and data science. My goal is to use data to solve complex problems and drive meaningful insights in sports and health.</p>
+        </section>
+
+        <hr>
+
+        <section id="projects" class="section">
+            <h2 style="font-size: 2em;">Sports Science & Analytics Projects</h2>
+            
+            <div class="project">
+                <h3>Collegiate Football Training and Practice Loads</h3>
+                <p><small>Project completed for a DI collegiate Football Team, analyzing data to identify key drivers of player load by position, informing strategies to optimize training and practice loads for enhanced player availability.</small></p>
+                <img src="images/CFB-training-load/dashboard.jpg?raw=true" alt="Dashboard of a football training load project">
+                <a href="/FB_PlayerLoadProject">View Project Report →</a>
+            </div>
+            
+            <div class="project">
+                <h3>End-of-Year Performance Analysis for Collegiate Gymnastics</h3>
+                <p><small>Project completed for a Division I collegiate gymnastics team, integrating competition scores, force plate metrics, injury logs, treatments, DEXA scans, and mental health data to highlight key performance trends and support planning around athlete health and readiness.</small></p>
+                <img src="images/Gymnastics/overview-figure.png?raw=true" alt="Figure showing injury percentage and treatment frequency">
+                <a href="/Gymnastics_Report">View Project Report →</a>
+            </div>
+            
+            <div class="project">
+                <h3>Collegiate Athletes Force Plate Analysis</h3>
+                <p><small>Project conducted on male and female Division I collegiate athletes from various sports, analyzing asymmetry changes over 3+ years to identify injury risk and optimize performance.</small></p>
+                <img src="images/AthleteProfiling/asymmetry.jpg?raw=true" alt="Asymmetry analysis chart from a force plate project">
+                <a href="/AthleteProfiling_ForcePlate">View Project Report →</a>
+            </div>
+            
+            <div class="project">
+                <h3>Case Studies of Relationships Between Asymmetry, Performance, and Injuries</h3>
+                <p><small>Study of two Division I collegiate football players, tracking asymmetry, performance, and injury data over multiple seasons to inform injury prevention and performance optimization approaches.</small></p>
+                <img src="images/AthleteProfiling/playerLoad.jpg?raw=true" alt="Player load data from a football case study">
+                <a href="/FB_CaseStudies">View Project Report →</a>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="contact" class="section">
+            <h2 style="font-size: 2em;">Contact</h2>
+            <p>I'm always open to discussing new projects and opportunities. Feel free to connect with me!</p>
+            <p>
+                <a href="https://www.linkedin.com/in/anna-busatto-326b27195/" style="font-size: 1.2em; margin: 0 15px; font-weight: bold;">LinkedIn</a>
+                <a href="https://github.com/annabusatto" style="font-size: 1.2em; margin: 0 15px; font-weight: bold;">GitHub</a>
+            </p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Anna Busatto. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
